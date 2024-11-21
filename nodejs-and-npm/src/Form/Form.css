@@ -4,7 +4,7 @@
     padding: 40px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1), 0 0 20px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
-    width: 85%;
+    max-width: 85%;
 }
 
 .label-container {
@@ -21,6 +21,13 @@
     font-family: Roboto sans-serif;
 }
 
+.text-with-icon {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
 .input-text {
     width: 100%;
     height: 2rem;
@@ -28,6 +35,14 @@
     border: 1px solid black;
     box-sizing: border-box;
     text-align: center;
+}
+
+.input-text[aria-invalid='true'] {
+    border-color: red; /* Цвет границы при ошибке */
+}
+
+.error {
+    color: red;
 }
 
 .input-button {
